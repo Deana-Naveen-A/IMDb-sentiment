@@ -1,0 +1,12 @@
+numpy
+pandas
+scikit-learn
+matplotlib
+seaborn
+joblib
+datasets
+streamlit
+# Only needed for the DistilBERT model (src/train_bert.py)
+torch
+transformers
+accelerate
