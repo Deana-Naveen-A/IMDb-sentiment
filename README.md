@@ -1,7 +1,7 @@
 # IMDb Review Sentiment Classification
 
 UE24CS352A - Machine Learning mini-project (Problem #10)
-Team: `<Name 1 (SRN)>`, `<Name 2 (SRN)>`
+Team: `<Deana Naveen A -PES1UG24AM077>`, `<Gonu Guntla Hema Kowshik -PES1UG24AM106>`
 
 Binary sentiment classification (positive / negative) of IMDb movie reviews
 using classical ML (TF-IDF + Logistic Regression / Naive Bayes / Linear SVM)
