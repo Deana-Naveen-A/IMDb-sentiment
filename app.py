@@ -9,8 +9,8 @@ from src.predict import (
     predict_classical,
 )
 
-st.set_page_config(page_title="IMDb Sentiment Classifier")
-st.title(" IMDb Review Sentiment Classifier")
+st.set_page_config(page_title="IMDb Sentiment Classifier", page_icon="🎬")
+st.title("🎬 IMDb Review Sentiment Classifier")
 st.caption("UE24CS352A Machine Learning mini-project - paste a movie review and get a prediction.")
 
 MODELS = {
@@ -55,9 +55,9 @@ if st.button("Predict", type="primary"):
         else:
             label, conf = predict_classical(get_classical(MODELS[choice]), review)
         if label == "Positive":
-            st.success(f"Positive  (confidence {conf:.1%})")
+            st.success(f"Positive 😊 (confidence {conf:.1%})")
         else:
-            st.error(f"Negative  (confidence {conf:.1%})")
+            st.error(f"Negative 😞 (confidence {conf:.1%})")
         st.progress(conf)
         if choice == "Linear SVM":
             st.caption("SVM confidence is a sigmoid of the margin, so it is not a calibrated probability.")
